@@ -70,6 +70,7 @@
         ul {
           padding: 0 18px;
           .food-item {
+            position: relative;
             box-sizing: border-box;
             // height: 100px;
             border-bottom: 1px solid #eee;
@@ -108,7 +109,12 @@
                 }
               }
             }
-          }
+            .cartControl-wrapper {
+              position: absolute;
+              right: 0;
+              bottom: 12px;
+            }
+          } //food-item
         }
       }
     }

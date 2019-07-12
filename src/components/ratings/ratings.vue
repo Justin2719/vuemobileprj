@@ -4,30 +4,30 @@
     <div class="ratings-content">
       <div class="overview">
         <div class="overview-left">
-          <h1 class="score">{{headinfo.score}}</h1>
+          <h1 class="score">{{seller.score}}</h1>
           <div class="title">综合评分</div>
-          <div class="rank">高于周边商家{{headinfo.rankRate}}%</div>
+          <div class="rank">高于周边商家{{seller.rankRate}}%</div>
         </div>
         <div class="overview-right">
           <div class="score-wrapper">
             <span class="title">服务态度</span>
-            <star :size="36" :score="headinfo.serviceScore"></star>
-            <span class="score">{{headinfo.serviceScore}}</span>
+            <star :size="36" :score="seller.serviceScore"></star>
+            <span class="score">{{seller.serviceScore}}</span>
           </div>
           <div class="score-wrapper">
             <span class="title">商品评分</span>
-            <star :size="36" :score="headinfo.foodScore"></star>
-            <span class="score">{{headinfo.foodScore}}</span>
+            <star :size="36" :score="seller.foodScore"></star>
+            <span class="score">{{seller.foodScore}}</span>
           </div>
           <div class="delivery-wrapper">
             <span class="title">送达时间</span>
-            <span class="delivery">{{headinfo.deliveryTime}}分钟</span>
+            <span class="delivery">{{seller.deliveryTime}}分钟</span>
           </div>
         </div>
       </div>
     </div>
     <!-- <split></split> -->
-    <!-- <ratingselect  @increment="incrementTotal" :select-type="selectType" :only-content="onlyContent" :ratings="ratings"></ratingselect> -->
+    <ratingselect  @increment="incrementTotal" :select-type="selectType" :only-content="onlyContent" :ratings="ratings"></ratingselect>
     <div class="rating-wrapper border-1px">
       <ul>
         <li v-for="rating in ratings" class="rating-item" v-show="needShow(rating.rateType, rating.text)">
@@ -62,16 +62,16 @@
   import BScroll from 'better-scroll';
   import star from '../star/star.vue';
   // import split from '../split/split.vue';
-  // import ratingselect from '../ratingselect/ratingselect.vue';
+  import ratingselect from '../ratingselect/ratingselect.vue';
   import {formatDate} from '../../common/js/date';
-  import data from '@/common/json/data.json';
+  import data from 'common/json/data.json';
   //  const POSITIVE = 0;
   //  const NEGATIVE = 1;
   const ALL = 2;
 //  const ERR_OK = 0;
   export default {
     props: {
-      headinfo: {
+      seller: {
         type: Object
       }
     },
@@ -127,7 +127,7 @@
     components: {
       star,
       // split,
-      // ratingselect
+      ratingselect
     }
   };
 </script>

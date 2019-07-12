@@ -31,7 +31,7 @@
                     v-show="item.oldPrice">￥{{item.oldPrice}}</span>
                 </div>
                 <div class="cartControl-wrapper">
-                  <!-- <cartControl :food="food" @increment="incrementTotal"></cartControl> -->
+                  <cartControl :food="item" @increment="incrementTotal"></cartControl>
                 </div>
               </div>
             </li>
@@ -41,13 +41,18 @@
     </div>
 
     <div class="shopcart">
-      购物车区域
+      <shopCart  :delivery-price="headinfo.deliveryPrice"
+                :min-price="headinfo.minPrice" ref="shopCart"></shopCart>
+      <food :food="selectedFood" ref="food"></food>
     </div>
   </div>
 </template>
 
 <script>
 import BScroll from 'better-scroll';
+import shopCart from '../shopcart/shopCart.vue';
+import cartControl from '../cartControl/cartControl.vue';
+import food from '../food/food.vue';
 import data from '@/common/json/data.json';
 export default {
   props: {
@@ -60,6 +65,7 @@ export default {
       goods: [],
       listHeight: [],
       scrolly: 0,
+      selectedFood: {},
       classMap: ['decrease', 'discount', 'special', 'invoice', 'guarantee']
     }
   },
@@ -121,7 +127,15 @@ export default {
         }
         this.selectedFood = food;
         this.$refs.food.show();
+      },
+      incrementTotal(target) {
+        this.$refs.shopCart.drop(target);
       }
+  },
+  components: {
+    shopCart,
+    cartControl,
+    food
   }
 }
 </script>
