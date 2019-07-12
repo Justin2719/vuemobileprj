@@ -1,0 +1,69 @@
+@import "../../common/index.less";
+
+.allstar {
+  .star-item {
+    &.star-48 {
+      .star {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        background-size: contain;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.on {
+          .bg-image('star48_on');
+        }
+        &.half {
+          .bg-image('star48_half');
+        }
+        &.off {
+          .bg-image('star48_off');
+        }
+      }
+    }
+    &.star-36 {
+      .star {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 3px;
+        background-size: contain;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.on {
+          .bg-image('star36_on');
+        }
+        &.half {
+          .bg-image('star36_half');
+        }
+        &.off {
+          .bg-image('star36_off');
+        }
+      }
+    }
+    &.star-24 {
+      .star {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 2px;
+        background-size: contain;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.on {
+          .bg-image('star24_on');
+        }
+        &.half {
+          .bg-image('star24_half');
+        }
+        &.off {
+          .bg-image('star24_off');
+        }
+      }
+    }
+  }
+}

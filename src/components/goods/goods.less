@@ -1,0 +1,124 @@
+@import "../../common/index.less";
+
+.good {
+  width: 100%;
+  height: 447px;
+  display: flex;
+  overflow: hidden;
+  .menu-wrapper {
+    width: 80px;
+    // height: 100%;
+    ul {
+      width: 100%;
+      height: 100%;
+      li {
+        width: 100%;
+        background-color: #f3f5f7;
+        padding: 0 12px;
+        box-sizing: border-box;
+        font-size: 12px;
+        height: 54px;
+        line-height: 12px;
+        display: table;
+        text-align: center;
+        &.current {
+          background-color: #fff;
+        }
+        .text {
+          display: table-cell;
+          vertical-align: middle;
+          .icon {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            vertical-align: middle;
+            background-size: contain;
+            &.decrease {
+              .bg-image('decrease_3')
+            }
+            &.discount {
+              .bg-image('discount_3')
+            }
+            &.guarantee {
+              .bg-image('guarantee_3')
+            }
+            &.invoice {
+              .bg-image('invoice_3')
+            }
+            &.special {
+              .bg-image('special_3')
+            }
+          }
+        }
+      }
+    }
+  }
+  .food-wrapper {
+    flex: 1;
+    background-color: #fff;
+    ul {
+      .good-list {
+        .title {
+          height: 26px;
+          border-left: 2px solid #ccc;
+          line-height: 26px;
+          font-size: 12px;
+          color: #999;
+          background-color: #fafafa;
+          padding-left: 16px;
+        }
+        ul {
+          padding: 0 18px;
+          .food-item {
+            box-sizing: border-box;
+            // height: 100px;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+            display: flex;
+            img {
+              width: 57px;
+              height: 57px;
+              margin-right: 12px;
+            }
+            .content {
+              .name {
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: -3px;
+              }
+              .desc {
+                font-size: 12px;
+                color: #999;
+              }
+              .extra {
+                font-size: 12px;
+                color:#999;
+                .count {
+                  margin-right: 10px;
+                }
+              }
+              .price {
+                .now {
+                  color: #f00;
+                }
+                .old {
+                  font-size: 10px;
+                  color: rgb(147, 153, 159);
+                  text-decoration: line-through;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .shopcart {
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #f00;
+  }
+}

@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('fonts/iconfont.eot?t=1481787488332');
+  /* IE9*/
+  src: url('fonts/iconfont.eot?t=1481787488332#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('fonts/iconfont.woff?t=1481787488332') format('woff'), /* chrome, firefox */ url('fonts/iconfont.ttf?t=1481787488332') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('fonts/iconfont.svg?t=1481787488332#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-zuoyoujiantou:before {
+  content: "\e600";
+}
+.icon-gouwuche:before {
+  content: "\e601";
+}
+.icon-jian:before {
+  content: "\e629";
+}
+.icon-aixin:before {
+  content: "\e61f";
+}
+.icon-down:before {
+  content: "\e603";
+}
+.icon-cha:before {
+  content: "\e646";
+}
+.icon-jia:before {
+  content: "\e622";
+}
+.icon-gou:before {
+  content: "\e73d";
+}
+.icon-damuzhi:before {
+  content: "\e607";
+}
+.icon-weibiaoti6-copy:before {
+  content: "\e670";
+}
+/* 根据dpr显示2x图/3x图 */
+.allstar .star-item.star-48 .star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  background-size: contain;
+}
+.allstar .star-item.star-48 .star:last-child {
+  margin-right: 0;
+}
+.allstar .star-item.star-48 .star.on {
+  background-image: url('star48_on@2x.png');
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .allstar .star-item.star-48 .star.on {
+    background-image: url('star48_on@3x.png');
+  }
+}
+.allstar .star-item.star-48 .star.half {
+  background-image: url('star48_half@2x.png');
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .allstar .star-item.star-48 .star.half {
+    background-image: url('star48_half@3x.png');
+  }
+}
+.allstar .star-item.star-48 .star.off {
+  background-image: url('star48_off@2x.png');
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .allstar .star-item.star-48 .star.off {
+    background-image: url('star48_off@3x.png');
+  }
+}
+.allstar .star-item.star-36 .star {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+  background-size: contain;
+}
+.allstar .star-item.star-36 .star:last-child {
+  margin-right: 0;
+}
+.allstar .star-item.star-36 .star.on {
+  background-image: url('star36_on@2x.png');
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .allstar .star-item.star-36 .star.on {
+    background-image: url('star36_on@3x.png');
+  }
+}
+.allstar .star-item.star-36 .star.half {
+  background-image: url('star36_half@2x.png');
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .allstar .star-item.star-36 .star.half {
+    background-image: url('star36_half@3x.png');
+  }
+}
+.allstar .star-item.star-36 .star.off {
+  background-image: url('star36_off@2x.png');
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .allstar .star-item.star-36 .star.off {
+    background-image: url('star36_off@3x.png');
+  }
+}
+.allstar .star-item.star-24 .star {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 2px;
+  background-size: contain;
+}
+.allstar .star-item.star-24 .star:last-child {
+  margin-right: 0;
+}
+.allstar .star-item.star-24 .star.on {
+  background-image: url('star24_on@2x.png');
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .allstar .star-item.star-24 .star.on {
+    background-image: url('star24_on@3x.png');
+  }
+}
+.allstar .star-item.star-24 .star.half {
+  background-image: url('star24_half@2x.png');
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .allstar .star-item.star-24 .star.half {
+    background-image: url('star24_half@3x.png');
+  }
+}
+.allstar .star-item.star-24 .star.off {
+  background-image: url('star24_off@2x.png');
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .allstar .star-item.star-24 .star.off {
+    background-image: url('star24_off@3x.png');
+  }
+}
